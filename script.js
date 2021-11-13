@@ -97,43 +97,90 @@
 // -------------------------------------------------------
 
 
-const inputText = document.querySelector("#input-text");
-const red = document.querySelector("#red");
-const blue = document.querySelector("#blue");
-const green = document.querySelector("#green");
+// const inputText = document.querySelector("#input-text");
+// const red = document.querySelector("#red");
+// const blue = document.querySelector("#blue");
+// const green = document.querySelector("#green");
+// const message = document.querySelector("#message");
+
+// inputText.addEventListener("input",showText)
+// red.addEventListener("click",showRed);
+// blue.addEventListener("click",showBlue);
+// green.addEventListener("click",showGreen);
+
+
+//  function showText(e){
+//  message.innerHTML = e.target.value;
+//  }
+// function showRed(){
+// message.style.color = "red";
+// }
+// function showBlue(){
+// message.style.color = "blue";
+
+// }
+// function showGreen(){
+// message.style.color = "green";
+
+// }
+// -----------------------------------------------------
+
+// var ul = document.createElement("ul");
+// document.body.appendChild(ul);
+
+// var li1 = document.createElement("li");
+// var li2 = document.createElement("li");
+
+// ul.appendChild(li1);
+// ul.appendChild(li2);
+// let bokka = document.createElement("p");
+// bokka.innerText = 'My name is '
+// document.body.appendChild(bokka);
+
+//   bokka.append(" lakhan");
+
+  // -----------------------------------------------------
+
+// const text = document.querySelector("#text");
+// const loaded = document.querySelector("#loaded");
+
+// loaded.addEventListener("click",hideText);
+
+// function hideText(){
+//   text.style.display = "none";
+//   loaded.disabled = true;
+// }
+
+// ---------------------------------------------------------
+
+// Sample Api -- https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json
+
+// const fetchData = document.querySelector("#fetch");
+// const message = document.querySelector("#message");
+// serverUrl = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json";
+//  function constructUrl(text){
+//    return serverUrl+ "?text="+text;
+//  }
+//   fetchData.addEventListener("click",fetchApi);
+//  function fetchApi(){
+//    fetch(constructUrl("kotesh"))
+//    .then(response => response.json())
+//    .then(data => console.log(data.contents.text.toUpperCase()));
+//  }
+
+const fetchResult = document.querySelector("#fetch");
 const message = document.querySelector("#message");
+var serverUrl = "https://jsonplaceholder.typicode.com/dummyUsers";
 
-inputText.addEventListener("input",showText)
-red.addEventListener("click",showRed);
-blue.addEventListener("click",showBlue);
-green.addEventListener("click",showGreen);
+// my url with text --> https://lessonfourapi-1.kotesharya.repl.co/translate/yoda.json?text=mamaji
 
+fetchResult.addEventListener("click",showResponse);
 
- function showText(e){
- message.innerHTML = e.target.value;
- }
-function showRed(){
-message.style.color = "red";
+function showResponse(){
+  fetch(serverUrl)
+  .then(response => console.log(response.status))
+    .catch(errorHandler)
 }
-function showBlue(){
-message.style.color = "blue";
-
+function errorHandler(error){
+  message.innerHTML = `The error is ${error}`;
 }
-function showGreen(){
-message.style.color = "green";
-
-}
-
-var ul = document.createElement("ul");
-document.body.appendChild(ul);
-
-var li1 = document.createElement("li");
-var li2 = document.createElement("li");
-
-ul.appendChild(li1);
-ul.appendChild(li2);
-let bokka = document.createElement("p");
-bokka.innerText = 'My name is '
-document.body.appendChild(bokka);
-
-  bokka.append(" lakhan");
