@@ -168,19 +168,69 @@
 //    .then(data => console.log(data.contents.text.toUpperCase()));
 //  }
 
-const fetchResult = document.querySelector("#fetch");
-const message = document.querySelector("#message");
-var serverUrl = "https://jsonplaceholder.typicode.com/dummyUsers";
+// const fetchResult = document.querySelector("#fetch");
+// const message = document.querySelector("#message");
+// var serverUrl = "https://lessonfourapi-1.kotesharya.repl.co/translate/yoda.json";
 
-// my url with text --> https://lessonfourapi-1.kotesharya.repl.co/translate/yoda.json?text=mamaji
+// // my url with text --> https://lessonfourapi-1.kotesharya.repl.co/translate/yoda.json?text=mamaji
 
-fetchResult.addEventListener("click",showResponse);
+// fetchResult.addEventListener("click",showResponse);
 
-function showResponse(){
-  fetch(serverUrl)
-  .then(response => console.log(response.status))
-    .catch(errorHandler)
-}
-function errorHandler(error){
-  message.innerHTML = `The error is ${error}`;
-}
+// function showResponse(){
+//   fetch(serverUrl)
+//   .then(response => console.log(response))
+//     // .catch(errorHandler)
+// }
+// function errorHandler(error){
+//   message.innerHTML = `The error is ${error}`;
+// }
+
+// --------------------------------------------------------
+
+//             Sneha-pujari mock 11/13/2021
+
+// // const inputTextOne = document.querySelector("#inputText1");
+// // const inputTextTwo = document.querySelector("#inputText2");
+// // const check = document.querySelector("#check");
+// // const message = document.querySelector("#message");
+
+// // check.addEventListener("click",compareInput);
+// // function compareInput(){
+// //   if (inputTextOne.value === inputTextTwo.value){
+// //     message.innerHTML="They are same";
+// //   }
+// //   else{
+// //         message.innerHTML="They are not same";
+
+// //   }
+// // }
+
+// ------ second task -------
+
+// const showTask = document.querySelector("#show");
+// const message = document.querySelector("#message");
+// const text = document.querySelector("#text");
+//  text.innerHTML = "kotesh";
+//  text.style.display = "none";
+// showTask.addEventListener("click",taskStatus);
+
+// function taskStatus(){
+//   for(i=0;i<dataArr.length;i++){
+//     if(dataArr[i].completed === true){
+// message.innerHTML += dataArr[i].task;
+//     }
+    
+//   }
+// }
+// var dataArr = [
+
+//   {
+//     task: "brush teeth ",
+//     completed: true
+//   },
+// {
+//     task: "dance hard",
+//     completed: true
+//   }
+
+// ];
