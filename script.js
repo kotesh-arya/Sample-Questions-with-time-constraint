@@ -139,7 +139,7 @@
 
 //   bokka.append(" lakhan");
 
-  // -----------------------------------------------------
+// -----------------------------------------------------
 
 // const text = document.querySelector("#text");
 // const loaded = document.querySelector("#loaded");
@@ -219,7 +219,7 @@
 //     if(dataArr[i].completed === true){
 // message.innerHTML += dataArr[i].task;
 //     }
-    
+
 //   }
 // }
 // var dataArr = [
@@ -234,3 +234,105 @@
 //   }
 
 // ];
+
+// const inputDigit = document.querySelector("#password");
+// const check = document.querySelector("#check");
+// const message = document.querySelector("#message");
+//  inputDigit.addEventListener("input",showletter);
+
+// check.addEventListener("click",showResponse);
+//   check.disabled = true;
+//   function showletter(e){
+//    if(e.target.value.length >= 10){
+//      check.disabled = false;
+//    }
+//   console.log(e.target.value.length);
+//  }
+// function showResponse(){
+//   if (inputDigit.value.length >= 10){
+//     message.innerHTML = "SUCCESS";
+//       check.disabled = false;
+
+//     inputDigit.style.backgroundColor = "green";
+//   }else{
+//     message.innerHTML = "ERROR";
+//     inputDigit.style.backgroundColor = "red";
+
+//   }
+// }
+
+
+// Create two objects with name, age, and yuga as Ram, 25, Treta. Krishna, 31, Dwapar. Write a function which takes two objects and return the person with more age.
+
+//  var ramData = {
+//   name:"Ram",
+//   age: 25,
+//   yuga:"Treta"
+// }
+//  var krishnaData = {
+//   name:"Krishna",
+//   age: 31,
+//   yuga:"Dwapar"
+// }
+
+// function showOlder(){
+//   if(ramData.age > krishnaData.age){
+//     console.log("Ram is the elder")
+//   }else{
+//     console.log("Krishna is the elder")
+//   }
+// }
+// showOlder();
+
+// Create two objects with name, power, and yuga as Ram, 2500, Treta. Krishna, 2325, Dwapar. Write a function which takes two objects and return the person with more power.
+
+// var ramData = {
+//   name: "Ram",
+//   power: 2500,
+//   yuga: "Treta"
+// }
+// var krishnaData = {
+//   name: "Krishna",
+//   power: 2325,
+//   yuga: "Dwapar"
+// }
+
+// function comparePower(){
+//   if(ramData.power > krishnaData.power){
+//     console.log("ram is the powerful");
+//   }else{
+//         console.log("krishna is the powerful");
+
+//   }
+// }
+// comparePower();
+
+
+// Create two objects with name, power, and yuga as Ram, 2500, Treta. Krishna, 2325, Dwapar. Say if every character in name is worth 35 power points. Write a function which takes two objects and return the person with more power based on their name and power both.
+
+
+// var ramData = {
+//   name: "Ram",
+//   power: 2500,
+//   yuga: "Treta"
+// }
+// var krishnaData = {
+//   name: "Krishna",
+//   power: 2325,
+//   yuga: "Dwapar"
+// }
+
+// function compreLetterPower() {
+//   var ramLetterPower = ramData.name.length * 35 + ramData.power;
+//   var krishnaLetterPower = krishnaData.name.length * 35 + krishnaData.power;
+//    console.log(ramLetterPower);
+//     console.log(krishnaLetterPower);
+//   if (ramLetterPower > krishnaLetterPower) {
+//     console.log("Ram is the powerful");
+//   } else {
+//     console.log("krishna is the powerful");
+
+//   }
+
+// }
+// compreLetterPower();
